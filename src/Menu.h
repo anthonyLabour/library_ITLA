@@ -11,8 +11,11 @@
 class Menu
 {
 	public:
-		void show();
-		Menu();
+		void Show();
+	void listItems();
+	void addNew();
+	void lastBook();
+	void Option(int option);
 };
 
 #endif /* MENU_H_ */

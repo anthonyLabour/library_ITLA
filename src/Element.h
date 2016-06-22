@@ -16,6 +16,15 @@ class Element
 
 	public:
 		Element(std::string name);
+ 		std::string getName()
+	{
+		return _name;
+	}
+
+ 		Element* getNext()
+	{
+		return _next;
+	}
 	//This means that Stack can access directly to Element's private members
 	friend class Stack;
 };

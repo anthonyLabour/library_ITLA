@@ -9,16 +9,29 @@
 
 void Stack::push(Element* element)
 {
-	//TODO: Implement this method.
+	if(_first==NULL)
+	{
+		_first = element;
+		_last = element;
+
+	}
+	else {
+		_last ->_next = element;
+		_last = element;
+	}
 }
 
 Element* Stack::pop()
 {
-	//TODO: Implement this method.
-	return NULL;
+	if(_last == NULL){
+	 		return NULL;
+	 	}
+	 	Element* element = _last;
+	 	_last = element -> _next;
+	 	return element;
 }
 
-Stack::Stack(): _last(NULL)
+Stack::Stack(): _first(NULL), _last(NULL)
 {
 
 }

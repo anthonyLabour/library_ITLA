@@ -11,11 +11,17 @@
 class Stack
 {
 	private:
+	Element* _first;
 		Element* _last;
 	public:
 		void push(Element*);
 		Element* pop();
 		Stack();
+
+	 Element* getFirst()
+	{
+		return _first;
+	}
 };
 
 #endif /* STACK_H_ */
